@@ -1,0 +1,251 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#main{
+    background:linear-gradient(to right bottom,red,black,black,red );
+    height:120%;
+    width:100%;
+}
+#top{
+
+    height:80px;
+    width:100%;
+    padding:15px 120px;
+    display: flex;
+}
+#left{
+    color:white;
+   font-size: 25px;
+   font-weight: lighter;
+}
+#middle{
+    display: flex;
+
+    margin:0px 40px;
+    margin-top:30px;
+    
+} #middle h3{
+    padding:0px 20px;
+    color:white;
+    font-family: "SUSE", sans-serif;
+    font-weight: 450;
+}
+#middle h3:hover{
+    color: red;
+}
+#right{
+    margin-top:15px;
+}
+#right button{
+    padding:10px;
+    width:150px;
+    height:50px;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: transparent;
+    color:white;
+    border: 2px solid white;
+}
+#right button:hover{
+    background-color: red;
+    border:2px solid red;
+}
+#menu i{
+    display: none;
+}
+#mid{
+    height:20%;
+   margin:0px 120px;
+    margin-top:45px;
+}
+#mid h1{
+    color: white;
+    font-size: 70px;
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#bottom{
+    margin:0px 120px;
+    margin-top:30px;
+    height:50%;
+    width:82%;
+    display:flex;
+    justify-content: space-between;
+}
+#bottom #box{
+    height:100%;
+    width:30%;
+    border-radius:20px;
+    border:0.5px solid rgba(255, 255, 255, 0.3);
+}
+#bottom #box:hover{
+    border-color: white;
+}
+
+#img{
+    height:30%;
+    width:100%;
+    padding-left:35px;
+    padding-top:20px;
+}
+#img i{
+   font-size: 80px;
+   -webkit-text-stroke: 0.5px white;
+   color: transparent;
+   opacity: 0.5;
+}
+#bottom #box:hover #img i{
+    opacity:1;
+}
+#textcontent{
+    height:50%;
+    padding:0px 30px;
+    font-family: "SUSE", sans-serif;
+    line-height:1;
+    color: white;
+}
+#textcontent h2{
+    margin-top:20px;
+    font-weight: 300;
+    line-height: 1.3;
+    opacity:0.6;
+}
+#arrow{
+    background-color: red;
+    height:38px;
+    width:38px;
+    border-radius: 50%;
+    margin-left:80%;
+    margin-top:10px;
+    padding-top:3px;
+}
+#arrow i{
+    color:white;
+    font-size:30px;
+    margin-left:5px;
+    -webkit-text-stroke: 0.1px white;
+}
+#bottom #box:hover #arrow i{
+    margin-left:20px;
+}
+#bottomnav{
+    display: flex;
+    width:82%;
+    height:8%;
+    margin:0px 120px;
+    margin-top:20px;   
+    justify-content: space-between; 
+}
+#bottomnav #left{
+    padding-top:15px;
+}
+#bottomnav #left h6{
+    font-weight: 500;
+}
+#bottomnav #right{
+    display: flex;
+}
+#bottomnav #right h3{
+    padding:0px 10px;
+}
+#bottomnav #right h3 a{
+    color:white;
+    text-decoration: none;
+    font-family: "SUSE", sans-serif;
+    font-weight: 500;
+}
+#bottomnav #right h3 a:hover{
+    text-decoration:underline;
+}
+@media (max-width:600px) {
+    #main{
+        background:linear-gradient(to right bottom,red,black,black,black );
+       height:200%;
+    }
+    #top{
+        padding:15px 40px;
+    }
+    #middle{
+        display: none;
+    }
+    #middle h3:hover{
+        color: red;
+    }
+    #right{
+        margin-top:15px;
+    }
+    #right button{
+        display: none;
+    }
+    #menu{
+        margin-top:12px;
+        margin-left:70px;
+    }
+    #menu i{
+        display: initial;
+        color: white;
+       font-size:40px;
+    }
+    #mid{
+        height:15%;
+       margin:0px 30px;
+        margin-top:30px;
+    }
+    #mid h1{
+        color: white;
+        font-size: 40px;
+        line-height: 1;
+        font-family: "Gilroy";
+    }
+    #bottom{
+        margin:10px 30px;
+        height:50%;
+        width:83%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #bottom #box{
+        height:60%;
+        width:100%;
+        margin-bottom:40px;
+    }
+    
+    #img{
+        padding-top:10px;
+    }
+    #img i{
+       font-size: 70px;
+    }
+    #textcontent{
+        height:40%;
+        padding:0px 30px;
+        padding-top:10px;
+    }
+    #textcontent h1{
+        font-size:30px;
+    }
+    #textcontent h2{
+        margin-top:10px;
+        font-size:15px;
+    }
+    
+    #bottomnav{
+        height:7%;
+        margin:0px 30px;
+        margin-top:55%;   
+    }
+    #bottomnav #left{
+        padding-top:15px;
+    }
+  
+    #bottomnav #right h3 a{
+        font-size: 15px;
+    }
+}
